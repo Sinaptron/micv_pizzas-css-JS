@@ -1,0 +1,45 @@
+CONSEJOS:
+nunca poner espacios en nombres archivos, imagenes, etc
+hay 13 servidores raiz, con muchisimo mas servidores conectados, en todo el mundo
+https://www.ochobitshacenunbyte.com/2019/10/22/root-server-los-principales-dns-del-mundo/
+
+de preferencia solo deben haber un H1 (titulo prinicipal)
+
+solamente puede haber un "head" en la pagina pero si varios "header"
+pagina para saber mas sobre dns etc etc
+https://howdns.works/es/
+
+para buscar la referencia de un color, abrimos ggole, y tecleamos: color picker
+dos dara uan referencia de colores y codigos
+
+cada nueva seccion de la pagina... usar (section)
+
+para reseteo de estilos, se puede hacer im0portando archivo localemnte de normalize o bien llamando en linea con la sig. direccion:
+https://necolas.github.io/normalize.css/8.0.1/normalize.css
+
+investigar los crawlers,  arañas, scrappers.... seguimiento en internet (leen sitios de todos lados para indexarlos y asi los usuarios puedan buscarlo) /ver tambien la semantica de html para una mejor indexacion  (y seo)
+
+para los iconos usar font awesone ... https://fontawesome.com/
+revisar porque no funciona localmente font awsome
+
+link, rutas; esto indica subir un nivel( ./ )
+link, rutas; esto  indica subir dos niveles( ../ )
+
+100% no es igual a 100vh, 100vh cubre todo, y 100% va de acuerdo a las propiedades de su padre
+
+Nivel de IMPORTANCIA DE ESTILOS EN CSS...
+ENTRE MAS ESPECIFICO SEA EL CODIGO, MAS IMPORTANCIA SE LE DA EN LA APLICACION
+1- style dentro de html-- <div class="content" style="background-color: pink" id="div"> 
+Dentro de css: 
+2- id --    #div.content {background-color: purple;}
+3- clases --   div#div {background-color: grey;}
+4- atributos --  #div {background-color: blue;}
+5- pseudo clases --  div.content {background-color: yellow;}
+6- selectores de tipo  --  .content {background-color: red;}
+7- pseudo elementos --  div {background-color: black;}
+
+testear overflow en web publisoconusco --o lo siguiente-- img {	max-width: 100%;} /evita que imagen se desborde
+https://www.freecodecamp.org/espanol/news/diseno-web-responsive-como-hacer-que-un-sitio-web-se-vea-bien-en-telefonos-y-tabletas/#:~:text=Las%20Media%20Queries%20son%20una,de%20pantalla%20y%20la%20orientaci%C3%B3n.
+
+
+

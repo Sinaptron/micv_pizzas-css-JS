@@ -1,0 +1,38 @@
+referencia a todas las eqtiquetas HTML
+https://www.w3schools.com/tags/ref_byfunc.asp
+https://www.w3schools.com/    (full)
+
+etiquetas vacias html, que se cierran solas, ejemplos:
+<img src="images/firefox-icon.png" alt="" />
+Los elementos vacíos en HTML son los siguientes:
+<area>  <base>  <br>  <col>  <embed>  <hr>  <img>
+<input>  <link>  <meta>  <param>  <source>  <track> <wbr>
+
+codificador en linea... parecido a codepen
+https://jsbin.com/?html,output
+
+display por defecto esta en block (uno encima de otro), se debe definir inline-block, (para poner uno a lado de otro)
+
+usan puerto 80 conexion sin encriptar (http), puerto 443 los de conexion encriptada (https) (barra direccion aparece "secure"/candado)
+
+paleta de colores:  
+https://m1.material.io/style/color.html
+https://flatuicolors.com/
+https://coolors.co/palettes/trending
+https://color.adobe.com/es/create/color-wheel
+aqui seleccionas dos colores y te da la paleta de colores: https://www.materialpalette.com/
+
+colores gradientes
+https://uigradients.com/#Aqualicious
+
+pagina de reglas para el uso adecuado de css (opcionales dependiendo de cada navegador):  https://www.w3.org/TR/css/
+pagina para validar que navegador es compatible con ciertas propiedades o elementos: https://caniuse.com/
+
+fuentes libre de derechos de autor: https://fonts.google.com/
+seleccionar fuente, estilos, despues pegar en html el link y en css la reglas o valores
+
+pagina para aprender jugando felxbox:  https://flexboxfroggy.com/#es
+
+listado de animaciones.... https://animate.style/ (seleccionar animacion y copiar codigo despues de la clase, ejemplo: 		<div class="content animate__animated animate__bounce">)
+
+usar display: inline-block; cuando se este ignorando el margen

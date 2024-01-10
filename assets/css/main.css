@@ -1,0 +1,180 @@
+/*
+rosa.... #d500f9;
+verde... #642b73; (tiene gradientes)
+
+*/
+
+/* fuente https://fonts.google.com/  
+-seleccionar fuente, estilos, despues pegar en html el link y en css la reglas o valores */
+html {
+font-family: 'Nunito', sans-serif;
+}
+
+p {
+	color: red;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #d500f9;
+}
+
+/* opacity, hover, visited, active, background */
+a:hover {
+	opacity: 0.2;
+}
+/* a:active { background: yellow; } */
+
+a:focus {
+	background: red;
+}
+
+
+.title {
+	text-transform: uppercase;
+	/* text-transform: lowercase;
+	text-transform: capitalize;  */
+}
+
+.table {
+	width: 100%;
+	border-spacing: 0;
+}
+
+.table td .table th {
+	padding: 1em;
+	text-align: left;
+}
+
+/*usando seudo clases- sirve por ejemplo para ir seleccionado uno a la vez, 
+por ejemplos numnero pares impares, en lugar de poner una clasae a cada elemento en html 
+en este codigo seleccionamos elementos TR de la TABLA 
+(pueden usarse tambien para pares (ODD) e impares (EVEN)*/
+.table tr:nth-child(even) {background-color: #38ef7d}
+
+.title-item {
+	/* border-bottom-style: solid; */ /*bottom, top, etc;  aplica al borde indicado */
+		/* border-width: 2px;
+	border-color: #d500f9; */
+	font-size: 2em;
+	border-bottom: #d500f9 solid 2px; /*este contiene las  propied. de arriba */
+	padding-bottom: 1em;
+}
+
+.address {
+	font-weight: bold;
+	color: darkred;
+	font-size: 1.2em;
+	margin-top: 1em;
+	display: inline-block; /*este codigo es necesario para que margin top funcione en responsive */
+}
+
+img {
+	float: left;
+	margin-right: 1em; /*separa el texto de la imagen */
+	height: 250px;
+}
+
+.position {
+	background-color: #642b73;
+	color: white;
+	padding: 10px;
+	border-radius: 4em; /*(arrib, derec, abajo, izq.separado seria: border-top-left-radius, border-top-right-radius, border-bottom-left-radius.. etc */
+	margin-right: 0.5em;
+}
+
+td {
+	border: solid 1px;
+}
+
+.container {	
+	background: #642b73;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* elemento content hereda las propiedades de su padre container */
+.content {
+	max-width: 960px;
+	max-height: 500px;
+	width: 100%;
+	height: 80vh;
+	background-color: white;
+	/*box.shadow: diferenciahorizontal diferenciavertical desenfoque amplitudcolor */
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 4px;
+	position: relative;
+	/*overflow: define comportamiento del contenido que se sale de las dimensiones establecidas */
+	padding: 1.8em;	
+	overflow: scroll;
+	/*  overflow-y: scroll; --permite desplazamiento vertical */
+	/*  overflow-x: hidden; --oculta desplazamiento horizontal */
+}
+
+.actions{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+}
+
+.close {
+	height: 40px;
+	width: 40px;
+	color: white;
+	border-radius: 50%;
+	background-color: #d500f9;
+	display: inline-block;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);;
+	font-weight: 300;
+	cursor: pointer;
+	display: flex; /* esta propiedad es para que centre la X declarada en span */
+	align-items: center; /* esta propiedad es para que centre la X declarada en span */
+	justify-content: center; /* esta propiedad es para que centre la X declarada en span */
+}
+
+.paragraph {
+	line-height: 1.8em;
+	font-weight: 300; /* debe tener sincronia con los archivos de fuentes importados en cabeceras de html */
+}
+
+.fa-star, .fa-star-o {
+	color: orange;
+}
+
+/* media queries para adaptaciones en pantallas pequeñas */
+@media (max-width:600px){
+	.content {
+		padding: 1em;
+	}
+	/* para responsive es mejor romper tablas en pequeños partes y se hace lo siguiente */
+	td{
+		display: block;
+		width: 100%;
+	}
+	/*seleciona un elemento basado en su posicion cuando esta a lado de otras etiquetas del mismo tipo */
+	/*selecciona el numero tal del tipo TD */
+	td:nth-of-type(1){
+		font-size: 1.5em;
+		font-weight: bold;
+		background-color: red;
+	}
+	th{
+		display: none;
+	}
+}
+
+@media (min-height:550px){
+	.content{
+		height: 500px;
+	}
+}
+
+
